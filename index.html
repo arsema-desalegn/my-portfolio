@@ -16,6 +16,25 @@ developer, HTML">
     <header>
 
     <h1>Arsema Desalegn</h1>
+    <p>Software Engineering student and aspiring software developer.</p>
+    <button type="button"
+        onclick="document.getElementById('hire-dialog').showModal()">
+    Hire Me
+</button>
+
+<dialog id="hire-dialog">
+
+    <h2>Available for internships</h2>
+    <p>
+        I am available for internships and freelance web projects
+        from June 2027.</p>
+    <p>
+        Send me a message or download my CV.</p>
+    <button type="button"
+            onclick="document.getElementById('hire-dialog').close()">Close
+    </button>
+
+</dialog>
     <img src="images/profile.jpg"
      alt="Portrait of Arsema Desalegn"
      title="Arsema Desalegn"
@@ -56,6 +75,12 @@ developer, HTML">
         Fun fact: I enjoy solving programming problems
         and learning new technologies.
     </p>
+    <h3>Hear my introduction</h3>
+
+    <audio controls>
+    <source src="media/intro.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
     </section>
 
     <aside>
@@ -125,6 +150,27 @@ developer, HTML">
     <dt>Git and GitHub</dt>
     <dd>Help me track code changes and store my projects online.</dd>
 </dl>
+    <h3>Skill Levels</h3>
+
+<p>HTML</p>
+<meter min="0" max="100"
+       low="40" high="75" optimum="90"
+       value="80">80%</meter>
+
+<p>Python</p>
+<meter min="0" max="100"
+       low="40" high="75" optimum="90"
+       value="70">70%</meter>
+
+<p>JavaScript</p>
+<meter min="0" max="100"
+       low="40" high="75" optimum="90"
+       value="20">20%</meter>
+
+<p>C++</p>
+<meter min="0" max="100"
+       low="40" high="75" optimum="90"
+       value="65">65%</meter>
 </section>
 
     <section id="projects">
@@ -181,7 +227,11 @@ int main() {
 
     <h3>BSc in Software Engineering</h3>
     <p>Addis Ababa Science and Technology University, 2023 - present</p>
-    
+    <h3>Degree Progress</h3>
+
+    <progress value="40" max="100">40%</progress>
+
+    <p>40% complete</p>
 <table border="1" cellpadding="8" cellspacing="0">
     <caption>Academic Record</caption>
 
