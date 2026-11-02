@@ -15,6 +15,9 @@ developer, HTML">
 <body>
     <header>
 
+        <canvas id="myLogo" width="120" height="120">
+    Arsema Desalegn logo
+</canvas>
     <h1>Arsema Desalegn</h1>
     <p>Software Engineering student and aspiring software developer.</p>
     <button type="button"
@@ -180,6 +183,11 @@ developer, HTML">
 <meter min="0" max="100"
        low="40" high="75" optimum="90"
        value="65">65%</meter>
+    <h3>My Skill Chart</h3>
+
+<canvas id="skillChart" width="300" height="150">
+    A bar chart showing my programming skill levels.
+</canvas>
 </section>
 
     <section id="projects">
@@ -589,5 +597,44 @@ Ethiopia</p>
     </p>
         &copy; 2026 Arsema Desalegn. All rights reserved.
     </footer>
+    <script>
+    const canvas = document.getElementById("myLogo");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0, 0, 120, 120);    
+    ctx.beginPath();
+    ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+    ctx.fillStyle = "white";
+    ctx.fill();
+        
+    ctx.fillStyle = "blue";
+    ctx.font = "bold 32px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("AD", 60, 60);
+
+    const chart = document.getElementById("skillChart");
+    const chartCtx = chart.getContext("2d");
+
+    chartCtx.fillStyle = "blue";
+    chartCtx.fillRect(20, 130 - 96, 35, 96);
+
+    chartCtx.fillRect(90, 130 - 84, 35, 84);
+
+    chartCtx.fillRect(160, 130 - 24, 35, 24);
+
+    chartCtx.fillRect(230, 130 - 78, 35, 78);
+
+    chartCtx.fillStyle = "black";
+    chartCtx.font = "10px Arial";
+    chartCtx.textAlign = "center";
+
+    chartCtx.fillText("HTML", 37, 145);
+    chartCtx.fillText("Python", 107, 145);
+    chartCtx.fillText("JavaScript", 177, 145);
+    chartCtx.fillText("C++", 247, 145);
+
+</script>
     </body>
     </html>
